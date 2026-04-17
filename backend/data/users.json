@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Admin User",
+    "email": "admin@enutrition.com",
+    "role": "admin",
+    "status": "active",
+    "lastLogin": "2026-04-17T10:30:00Z"
+  },
+  {
+    "id": 2,
+    "name": "John Nutritionist",
+    "email": "john@enutrition.com",
+    "role": "nutritionist",
+    "status": "active",
+    "lastLogin": "2026-04-17T09:15:00Z"
+  },
+  {
+    "id": 3,
+    "name": "Sarah Data Manager",
+    "email": "sarah@enutrition.com",
+    "role": "data_manager",
+    "status": "active",
+    "lastLogin": "2026-04-16T16:45:00Z"
+  },
+  {
+    "id": 4,
+    "name": "Mike Trainer",
+    "email": "mike@enutrition.com",
+    "role": "trainer",
+    "status": "inactive",
+    "lastLogin": "2026-04-15T14:20:00Z"
+  }
+]

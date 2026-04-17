@@ -1,0 +1,67 @@
+[
+  {
+    "id": 1,
+    "userId": "user-001",
+    "date": "2026-04-17",
+    "meals": [
+      {
+        "type": "breakfast",
+        "items": [
+          { "name": "Oatmeal with berries", "calories": 350, "protein": 12 },
+          { "name": "Green tea", "calories": 2, "protein": 0 }
+        ],
+        "totalCalories": 352,
+        "totalProtein": 12
+      },
+      {
+        "type": "lunch",
+        "items": [
+          { "name": "Grilled chicken breast", "calories": 280, "protein": 45 },
+          { "name": "Quinoa salad", "calories": 150, "protein": 8 },
+          { "name": "Mixed vegetables", "calories": 80, "protein": 3 }
+        ],
+        "totalCalories": 510,
+        "totalProtein": 56
+      },
+      {
+        "type": "dinner",
+        "items": [
+          { "name": "Salmon fillet", "calories": 400, "protein": 50 },
+          { "name": "Sweet potato", "calories": 120, "protein": 2 },
+          { "name": "Steamed broccoli", "calories": 55, "protein": 4 }
+        ],
+        "totalCalories": 575,
+        "totalProtein": 56
+      }
+    ],
+    "dailyTotals": {
+      "calories": 1437,
+      "protein": 124,
+      "carbs": 180,
+      "fat": 45,
+      "fiber": 28
+    }
+  },
+  {
+    "id": 2,
+    "userId": "user-002",
+    "date": "2026-04-17",
+    "meals": [
+      {
+        "type": "breakfast",
+        "items": [
+          { "name": "Greek yogurt with granola", "calories": 280, "protein": 20 }
+        ],
+        "totalCalories": 280,
+        "totalProtein": 20
+      }
+    ],
+    "dailyTotals": {
+      "calories": 2200,
+      "protein": 95,
+      "carbs": 250,
+      "fat": 70,
+      "fiber": 22
+    }
+  }
+]

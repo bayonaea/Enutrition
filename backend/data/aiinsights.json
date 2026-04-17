@@ -1,0 +1,46 @@
+{
+  "personalizedRecommendations": [
+    {
+      "category": "Protein Intake",
+      "current": "98g/day",
+      "recommended": "110g/day",
+      "suggestion": "Increase protein intake by 12g daily. Add lean meats, legumes, or dairy products.",
+      "priority": "medium"
+    },
+    {
+      "category": "Hydration",
+      "current": "6 glasses/day",
+      "recommended": "8 glasses/day",
+      "suggestion": "Drink 2 more glasses of water daily to meet optimal hydration levels.",
+      "priority": "high"
+    },
+    {
+      "category": "Meal Timing",
+      "current": "Irregular",
+      "recommended": "Regular intervals",
+      "suggestion": "Establish consistent meal times to improve digestion and metabolism.",
+      "priority": "medium"
+    }
+  ],
+  "predictiveAnalysis": [
+    {
+      "metric": "Weight Trend",
+      "prediction": "Stable at current intake",
+      "confidence": "85%",
+      "timeframe": "4 weeks"
+    },
+    {
+      "metric": "Energy Levels",
+      "prediction": "Will improve with increased protein",
+      "confidence": "78%",
+      "timeframe": "2 weeks"
+    }
+  ],
+  "nutritionScore": {
+    "overall": 78,
+    "balance": 82,
+    "consistency": 75,
+    "variety": 76,
+    "trend": "improving"
+  }
+}

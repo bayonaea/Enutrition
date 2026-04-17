@@ -1,0 +1,32 @@
+{
+  "trends": {
+    "calorieIntake": [
+      { "date": "2026-04-11", "value": 2150 },
+      { "date": "2026-04-12", "value": 2300 },
+      { "date": "2026-04-13", "value": 2050 },
+      { "date": "2026-04-14", "value": 2400 },
+      { "date": "2026-04-15", "value": 2100 },
+      { "date": "2026-04-16", "value": 2250 },
+      { "date": "2026-04-17", "value": 2180 }
+    ],
+    "proteinIntake": [
+      { "date": "2026-04-11", "value": 95 },
+      { "date": "2026-04-12", "value": 110 },
+      { "date": "2026-04-13", "value": 88 },
+      { "date": "2026-04-14", "value": 120 },
+      { "date": "2026-04-15", "value": 92 },
+      { "date": "2026-04-16", "value": 105 },
+      { "date": "2026-04-17", "value": 98 }
+    ]
+  },
+  "macronutrients": {
+    "protein": { "percentage": 35, "grams": 125 },
+    "carbs": { "percentage": 45, "grams": 220 },
+    "fat": { "percentage": 20, "grams": 65 }
+  },
+  "weeklyComparison": {
+    "thisWeekAverage": 2188,
+    "lastWeekAverage": 2156,
+    "difference": "+32 kcal"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "summary": {
+    "totalUsers": 1542,
+    "activeUsers": 1289,
+    "dataCollected": 45823,
+    "pendingReview": 234,
+    "apiCallsToday": 8934
+  },
+  "recentActivity": [
+    {
+      "id": 1,
+      "type": "data_upload",
+      "user": "John Doe",
+      "description": "Uploaded nutrition data for 50 users",
+      "timestamp": "2026-04-17T10:15:00Z",
+      "status": "completed"
+    },
+    {
+      "id": 2,
+      "type": "report_generated",
+      "user": "Jane Smith",
+      "description": "Generated quarterly nutrition report",
+      "timestamp": "2026-04-17T09:45:00Z",
+      "status": "completed"
+    },
+    {
+      "id": 3,
+      "type": "data_analysis",
+      "user": "System",
+      "description": "AI analysis completed for 234 records",
+      "timestamp": "2026-04-17T08:30:00Z",
+      "status": "in_progress"
+    }
+  ],
+  "healthMetrics": [
+    { "label": "BMI", "value": "23.5", "status": "normal" },
+    { "label": "Calorie Intake", "value": "2100 kcal", "status": "normal" },
+    { "label": "Protein Intake", "value": "85g", "status": "normal" },
+    { "label": "Hydration", "value": "8 glasses", "status": "optimal" }
+  ]
+}
