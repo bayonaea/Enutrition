@@ -1,0 +1,356 @@
+E-NUTRITION WORKFLOW
+1. DATA COLLECTION MODULE (Field System)
+🎯 Goal:
+Capture accurate nutrition survey data from field researchers.
+
+🔄 Workflow
+1. Survey Setup (Admin)
+Create survey project (e.g., NNS 2026)
+Define survey type:
+Anthropometry
+Dietary
+Clinical
+Assign regions & enumerators
+
+2. Form Configuration
+Build dynamic forms:
+Household info
+Individual profile
+Health indicators
+Add:
+Validation rules (e.g., age must be > 0)
+Required fields
+Conditional logic
+
+3. Field Data Collection (Mobile App)
+Enumerator logs in
+Downloads assigned survey
+Inputs:
+Personal data
+Measurements
+Food intake
+Attach:
+Photos
+GPS location
+
+4. Offline Storage
+Data stored locally if no internet
+
+5. Sync to Server
+Auto/manual sync when online
+Conflict resolution (duplicate entries)
+
+6. Submission Lock
+Final submission → cannot edit
+Status: Draft → Submitted → Verified
+
+ Core Functionalities
+Offline-first mobile app
+Dynamic form builder
+Geo-tagging
+Media upload
+Sync engine
+Validation engine
+
+2. DATA MANAGEMENT MODULE (Core Backend)
+🎯 Goal:
+Clean, validate, and organize collected data.
+
+🔄 Workflow
+1. Data Ingestion
+Receive raw data from mobile app
+Store in staging database
+
+2. Data Validation
+Check:
+Missing values
+Outliers (e.g., unrealistic weight)
+Flag records
+
+3. Data Cleaning
+Admin reviews flagged entries
+Edit / approve / reject
+
+4. Data Structuring
+Normalize into:
+Household table
+Individual table
+Health records
+Dietary logs
+
+5. Data Versioning
+Save dataset versions:
+v1 raw
+v2 cleaned
+v3 published
+
+6. Approval Workflow
+Data Analyst → Reviewer → Final Approval
+
+⚙️ Core Functionalities
+Data validation engine
+Data cleaning interface
+Audit logs
+Version control
+Approval workflow
+
+3. DATA WAREHOUSE MODULE
+🎯 Goal:
+Store and organize all historical nutrition datasets.
+
+🔄 Workflow
+1. Data Storage
+Store structured datasets
+
+2. Metadata Tagging
+Tag by:
+Year
+Region
+Survey type
+Population group
+
+3. Indexing
+Optimize for:
+Fast search
+Filtering
+
+4. Archiving
+Move old datasets to archive storage
+
+Core Functionalities
+Structured database
+Metadata system
+Indexing engine
+Data partitioning
+Backup system
+
+4. ANALYTICS DASHBOARD MODULE
+🎯 Goal:
+Turn raw data into insights.
+
+🔄 Workflow
+1. Data Selection
+User selects:
+Year
+Region
+Indicator (e.g., malnutrition rate)
+
+2. Data Processing
+System aggregates:
+Averages
+Percentages
+Trends
+
+3. Visualization
+Display:
+Charts (bar, line)
+Heatmaps
+Tables
+
+4. Drill-Down
+Click region → view detailed breakdown
+
+5. Export
+Export:
+PNG
+PDF
+CSV
+
+⚙️ Core Functionalities
+Chart engine
+Filter system
+KPI builder
+Drill-down analytics
+Export tools
+
+5. PUBLIC DATA PORTAL
+🎯 Goal:
+Allow users to explore and download datasets.
+
+🔄 Workflow
+1. Browse Data
+View available:
+Surveys
+Reports
+Datasets
+
+2. Search & Filter
+Filter by:
+Year
+Category
+Region
+
+3. Preview Data
+View summary before download
+
+4. Download
+Download:
+Public Use Files (PUF)
+Reports
+
+5. Usage Tracking
+Log downloads
+
+⚙️ Core Functionalities
+Search engine
+Dataset preview
+Download manager
+File storage system
+
+6. USER MANAGEMENT MODULE
+🎯 Goal:
+Control access and permissions.
+
+🔄 Workflow
+1. User Registration
+Create account (manual or self-signup)
+
+2. Role Assignment
+Assign:
+Admin
+Researcher
+LGU
+Public
+
+3. Authentication
+Login/logout
+Password reset
+
+4. Authorization
+Restrict access:
+Data editing
+Downloads
+Admin tools
+
+5. Activity Tracking
+Log:
+Login history
+Data access
+
+⚙️ Core Functionalities
+RBAC (Role-Based Access Control)
+Authentication system
+Activity logs
+Permissions engine
+
+7. API & INTEGRATION MODULE
+Goal:
+Connect system with external platforms.
+
+🔄 Workflow
+1. API Request
+External system requests data
+
+2. Authentication
+API key / token validation
+
+3. Data Retrieval
+Fetch requested dataset
+
+4. Response Delivery
+Return JSON/CSV
+
+5. Logging
+Track API usage
+
+⚙️ Core Functionalities
+REST API
+API authentication
+Rate limiting
+Data export endpoints
+
+8. TRAINING & CERTIFICATION MODULE
+Goal:
+Train researchers and users.
+
+🔄 Workflow
+1. Course Creation
+Admin uploads:
+Videos
+Documents
+
+2. Enrollment
+User enrolls in course
+
+3. Learning
+Watch lessons
+Take quizzes
+
+4. Assessment
+Pass exam
+
+5. Certification
+Generate certificate
+
+⚙️ Core Functionalities
+LMS system
+Quiz engine
+Progress tracking
+Certificate generator
+
+9. REPORT GENERATOR MODULE
+Goal:
+Automate report creation.
+
+🔄 Workflow
+1. Select Data
+Choose dataset & filters
+
+2. Generate Report
+System compiles:
+Charts
+Tables
+Insights
+
+3. Customize
+Add logos, sections
+
+4. Export
+PDF / Excel
+
+⚙️ Core Functionalities
+Report builder
+Template system
+Export engine
+
+10. CMS / ANNOUNCEMENT MODULE
+Goal:
+Manage website content.
+
+🔄 Workflow
+1. Create Content
+News / announcements
+
+2. Edit & Format
+Add images, text
+
+3. Publish
+Schedule or publish instantly
+
+4. Archive
+Store old posts
+
+ Core Functionalities
+Content editor
+Media manager
+Publishing system
+
+FINAL SYSTEM FLOW (MASTER VIEW)
+[Data Collection]
+  ↓
+[Data Management]
+  ↓
+[Data Warehouse]
+  ↓
+[Analytics Dashboard] ←→ [Report Generator]
+  ↓
+[Public Portal]
+  ↓
+[Users / LGU / Researchers]
+
++ Supporting:
+[User Management]
+[API Integration]
+[Training Module]
+[CMS]
+
