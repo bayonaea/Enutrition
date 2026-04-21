@@ -4,6 +4,7 @@ import {
   Download, Eye, GripVertical, Trash2, Settings, ChevronDown
 } from "lucide-react";
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
+import { BackButton } from "../components/BackButton";
 
 type BlockType = "title" | "text" | "chart" | "table" | "divider";
 
@@ -198,6 +199,7 @@ export function ReportGenerator() {
 
   return (
     <div className="p-4 lg:p-6 space-y-5">
+      <BackButton />
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h1 className="text-gray-900 text-xl font-bold">Report Generator</h1>

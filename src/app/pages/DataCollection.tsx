@@ -4,6 +4,7 @@ import {
   MapPin, Camera, ChevronRight, ChevronLeft, User,
   Home, Activity, Utensils, Wifi, WifiOff, Plus
 } from "lucide-react";
+import { BackButton } from "../components/BackButton";
 
 const surveys = [
   { id: "S-001", name: "NNS 2026 - Barangay Malinta", region: "Region III", status: "pending", count: 12, total: 30 },
@@ -65,6 +66,7 @@ export function DataCollection() {
 
   return (
     <div className="p-4 lg:p-6 space-y-5">
+      <BackButton />
       {/* Header */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>

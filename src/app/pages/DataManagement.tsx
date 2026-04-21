@@ -4,6 +4,7 @@ import {
   Download, Eye, Edit3, Trash2, ChevronDown, RefreshCw,
   Shield, FileText, Activity
 } from "lucide-react";
+import { BackButton } from "../components/BackButton";
 
 const records = [
   { id: "REC-2026-0041", household: "HH-2026-0391", region: "Region III", enumerator: "Maria Santos", date: "Apr 16, 2026", status: "clean", score: 98, issues: 0 },
@@ -59,6 +60,7 @@ export function DataManagement() {
 
   return (
     <div className="p-4 lg:p-6 space-y-5">
+      <BackButton />
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h1 className="text-gray-900 text-xl font-bold">Data Management</h1>

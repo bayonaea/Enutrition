@@ -4,6 +4,7 @@ import {
   Tooltip, ResponsiveContainer, ScatterChart, Scatter, Cell
 } from "recharts";
 import { Download, ZoomIn, Filter, Info } from "lucide-react";
+import { BackButton } from "../components/BackButton";
 
 const trendData = [
   { year: "2019", stunting: 29.4, wasting: 6.0, underweight: 19.0, obesity: 8.2 },
@@ -50,6 +51,7 @@ export function Analytics() {
 
   return (
     <div className="p-4 lg:p-6 space-y-5">
+      <BackButton />
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h1 className="text-gray-900 text-xl font-bold">Deep Analytics</h1>

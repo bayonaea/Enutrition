@@ -3,6 +3,11 @@
 
   This is a code bundle for E-Nutrition Project Workflow. The original project is available at https://www.figma.com/design/OhD94LmmVtymG9yfjGhwbz/E-Nutrition-Project-Workflow.
 
+  ## Workflow Reference
+
+  - Canonical workflow specification: `guidelines/E-NUTRITION_WORKFLOW_SPEC.md`
+  - In-app workflow page: `/workflow`
+
   ## Running the code
 
   Run `npm i` to install the dependencies.

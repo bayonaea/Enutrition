@@ -1,5 +1,6 @@
 import { Outlet, NavLink, useNavigate, useLocation } from "react-router";
 import { useState } from "react";
+import { NavigationProvider } from "../context/NavigationContext";
 import {
   LayoutDashboard, ClipboardList, Database, BarChart3, Globe,
   Users, Code2, GraduationCap, FileText, Megaphone, Brain,
@@ -197,7 +198,9 @@ export function Layout() {
 
         {/* Page content */}
         <main className="flex-1 overflow-y-auto">
-          <Outlet />
+          <NavigationProvider>
+            <Outlet />
+          </NavigationProvider>
         </main>
       </div>
     </div>

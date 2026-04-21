@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Users, Plus, Edit3, Trash2, Shield, Search, Key } from "lucide-react";
+import { BackButton } from "../components/BackButton";
 
 const users = [
   { id: 1, name: "Juan Dela Cruz", email: "jdelacruz@nnc.gov.ph", role: "admin", region: "National", status: "active", last: "Today, 10:45 AM" },
@@ -43,6 +44,7 @@ export function UserManagement() {
 
   return (
     <div className="p-4 lg:p-6 space-y-5">
+      <BackButton />
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h1 className="text-gray-900 text-xl font-bold">User Management</h1>

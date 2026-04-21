@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Code2, Key, Copy, CheckCircle, Play, Activity, Plus, Eye, EyeOff } from "lucide-react";
+import { BackButton } from "../components/BackButton";
 
 const apiKeys = [
   { name: "DOH Integration", key: "sk_live_doh_x8k2m9...a4f1", created: "Jan 15, 2026", calls: 14820, status: "active" },
@@ -91,6 +92,7 @@ export function ApiIntegration() {
 
   return (
     <div className="p-4 lg:p-6 space-y-5">
+      <BackButton />
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h1 className="text-gray-900 text-xl font-bold">API & Integration</h1>

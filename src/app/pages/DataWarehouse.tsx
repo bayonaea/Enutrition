@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Server, Archive, Tag, HardDrive, Database, Search, Download, Clock } from "lucide-react";
+import { BackButton } from "../components/BackButton";
 
 const datasets = [
   { name: "NNS 2024 - National", type: "Anthropometry", year: 2024, region: "National", version: "v3 Published", size: "284 MB", records: 145200, status: "published" },
@@ -31,6 +32,7 @@ export function DataWarehouse() {
 
   return (
     <div className="p-4 lg:p-6 space-y-5">
+      <BackButton />
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h1 className="text-gray-900 text-xl font-bold">Data Warehouse</h1>

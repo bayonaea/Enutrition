@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Megaphone, Plus, Edit3, Trash2, Eye, Calendar, Tag, Globe, Pin } from "lucide-react";
+import { BackButton } from "../components/BackButton";
 
 const posts = [
   {
@@ -90,6 +91,7 @@ export function Announcements() {
 
   return (
     <div className="p-4 lg:p-6 space-y-5">
+      <BackButton />
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h1 className="text-gray-900 text-xl font-bold">Announcements & CMS</h1>

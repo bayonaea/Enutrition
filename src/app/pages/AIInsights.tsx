@@ -5,6 +5,7 @@ import {
   MapPin, Users
 } from "lucide-react";
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer } from "recharts";
+import { BackButton } from "../components/BackButton";
 
 const insights = [
   {
@@ -133,6 +134,7 @@ export function AIInsights() {
 
   return (
     <div className="p-4 lg:p-6 space-y-5">
+      <BackButton />
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h1 className="text-gray-900 text-xl font-bold flex items-center gap-2">

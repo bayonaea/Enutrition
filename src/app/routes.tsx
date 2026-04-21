@@ -13,6 +13,7 @@ import { ReportGenerator } from "./pages/ReportGenerator";
 import { Announcements } from "./pages/Announcements";
 import { AIInsights } from "./pages/AIInsights";
 import { DataWarehouse } from "./pages/DataWarehouse";
+import { Workflow } from "./pages/Workflow";
 
 export const router = createBrowserRouter([
   {
@@ -24,6 +25,7 @@ export const router = createBrowserRouter([
     Component: Layout,
     children: [
       { index: true, Component: Dashboard },
+      { path: "workflow", Component: Workflow },
       { path: "data-collection", Component: DataCollection },
       { path: "data-management", Component: DataManagement },
       { path: "data-warehouse", Component: DataWarehouse },

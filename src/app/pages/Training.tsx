@@ -3,6 +3,7 @@ import {
   GraduationCap, Play, CheckCircle, Lock, Clock, Award,
   Star, Users, ChevronRight, BookOpen
 } from "lucide-react";
+import { BackButton } from "../components/BackButton";
 
 const courses = [
   {

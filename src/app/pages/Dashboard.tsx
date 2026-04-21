@@ -59,6 +59,19 @@ const recentActivity = [
   { action: "API key issued", user: "DOH Integration", time: "3 hrs ago", type: "api" },
 ];
 
+const moduleShowcase = [
+  { name: "Data Collection", path: "/data-collection", color: "#10B981", stage: "Operational" },
+  { name: "Data Management", path: "/data-management", color: "#1E3A8A", stage: "Operational" },
+  { name: "Data Warehouse", path: "/data-warehouse", color: "#6366F1", stage: "Operational" },
+  { name: "Analytics Dashboard", path: "/analytics", color: "#F59E0B", stage: "Operational" },
+  { name: "Public Data Portal", path: "/public-portal", color: "#0ea5e9", stage: "Operational" },
+  { name: "User Management", path: "/users", color: "#334155", stage: "Operational" },
+  { name: "API and Integration", path: "/api", color: "#7c3aed", stage: "Operational" },
+  { name: "Training", path: "/training", color: "#db2777", stage: "Operational" },
+  { name: "Report Generator", path: "/reports", color: "#ea580c", stage: "Operational" },
+  { name: "CMS and Announcements", path: "/announcements", color: "#059669", stage: "Operational" },
+];
+
 export function Dashboard() {
   const navigate = useNavigate();
 
@@ -328,12 +341,39 @@ export function Dashboard() {
         </div>
       </div>
 
+      {/* Module Presentation */}
+      <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-3">
+          <div>
+            <h3 className="text-gray-900 font-semibold text-sm">System Modules for Presentation</h3>
+            <p className="text-gray-400 text-xs mt-0.5">All required workflow modules are available in this build</p>
+          </div>
+          <span className="text-xs px-2 py-1 rounded-full font-medium" style={{ background: "#dcfce7", color: "#166534" }}>
+            10/10 Modules Active
+          </span>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-2">
+          {moduleShowcase.map((module) => (
+            <button
+              key={module.name}
+              onClick={() => navigate(module.path)}
+              className="text-left p-3 rounded-xl border border-gray-100 hover:border-gray-200 hover:shadow-sm transition-all"
+              style={{ background: `${module.color}10` }}
+            >
+              <div className="text-xs font-semibold mb-1" style={{ color: module.color }}>{module.name}</div>
+              <div className="text-[11px] text-gray-600">Route: {module.path}</div>
+              <div className="text-[11px] font-medium mt-1" style={{ color: "#166534" }}>{module.stage}</div>
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* Quick Navigation + Activity */}
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-4">
         {/* Quick Access */}
         <div className="bg-white rounded-xl border border-gray-100 shadow-sm p-4">
           <h3 className="text-gray-900 font-semibold text-sm mb-3">Quick Access</h3>
-          <div className="grid grid-cols-3 gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
             {[
               { label: "Field Survey", path: "/data-collection", color: "#10B981", emoji: "📱" },
               { label: "Data Mgmt", path: "/data-management", color: "#1E3A8A", emoji: "🗄️" },
